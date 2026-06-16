@@ -70,4 +70,4 @@ python main.py
 
 ## Funcionamento
 
-![execucao](photos/screenshot.png)
+![execucao](photos/screenshot.jpeg)
