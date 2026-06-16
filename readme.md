@@ -16,10 +16,11 @@ Olá, <nome_contato> tudo bem com você?
 
 Tabela: `Contacts`
 
-Colunas: 
-id - int8
-name - text
-phone_num - text
+| Coluna | Tipo |
+|---------|---------|
+| id | int8 |
+| name | text |
+| phone_num | text |
 
 ## Variáveis de ambiente
 
