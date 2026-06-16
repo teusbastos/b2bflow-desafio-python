@@ -29,7 +29,7 @@ def send_message(phone_num, message):
 
     try:
         response = requests.post(url, json=payload, headers=headers, timeout=10)
-        print(response.status_code)
+        logger.info(response.status_code)
         logger.info(f"Mensagem enviada para: {phone_num}")
     
     except Exception as e:

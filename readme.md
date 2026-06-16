@@ -1,19 +1,72 @@
 # b2bflow-python-challenge
 
-## Setup
+Desafio técnico para a vaga de Estágio em Desenvolvimento Python da b2bflow.
 
-1. Criar uma tabela contacts no Supabase:
+## Objetivo
 
-id
-name
-phone_num
+Ler contatos cadastrados no Supabase e enviar uma mensagem personalizada via Z-API.
 
-2. Configurar o arquivo .env
+Mensagem enviada:
 
-3. Instalar dependências
+```text
+Olá, <nome_contato> tudo bem com você?
+```
 
+## Estrutura da tabela
+
+Tabela: `Contacts`
+
+Colunas: 
+id - int8
+name - text
+phone_num - text
+
+## Variáveis de ambiente
+
+Crie um arquivo `.env` com:
+
+```env
+SUPABASE_URL=
+SUPABASE_KEY=
+
+INSTANCE_ID=
+INSTANCE_TOKEN=
+CLIENT_TOKEN=
+```
+
+## Instalação
+
+Criar ambiente virtual:
+
+```bash
+python -m venv .venv
+```
+
+Ativar ambiente:
+
+```bash
+.venv\Scripts\activate
+```
+
+Instalar dependências:
+
+```bash
 pip install -r requirements.txt
+```
 
-4. Executar
+## Execução
 
+```bash
 python main.py
+```
+
+## Tecnologias utilizadas
+
+- Python
+- Supabase
+- Z-API
+- python-dotenv
+
+## Funcionamento
+
+![execucao](photos/screenshot.png)
